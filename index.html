@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar_AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="مكتبة القران الكريم" />
+    <meta property="og:locale" content="ar_AR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="قرآننا Quran mp3" />
+    <meta property="og:description" content="مكتبة القران الكريم" />
+    <meta property="og:site_name" content="قرآننا Quran mp3" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <title>قرآننا Quran mp3</title>
+</head>
+
+<body>
+    <div class="main">
+
+        <div class="header">
+            <h1 class="logo">قرآننا</h1>
+            <div class="header-icons">
+                <a onclick="section(id)" id="book"><ion-icon name="book"></ion-icon></a>
+                <a onclick="section(id)" id="sparkles"><ion-icon name="sparkles"></ion-icon></a>
+                <a onclick="section(id)" id="headset"><ion-icon name="headset"></ion-icon></a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="readers active" id="section_1"></div>
+            <div class="readers" id="section_2">تلاوات خاشعه</div>
+            <div class="readers" id="section_3">خطب ومواعظ</div>
+        </div>
+
+    </div>
+
+    <div class="playList">
+
+        <div class="play">
+            <img class="img-play"
+                src="https://play-lh.googleusercontent.com/ZV4177EbMD2ghHRjWV1dfPzPzZIg4Fsk8lcLnxz8aO20VQ6o62GXvLayemvWBRNK0NU"
+                alt="">
+            <div class="Data">
+                <h1 class="nameReader"></h1>
+                <h1 class="title"></h1>
+            </div>
+            <audio id="0" class="play-audio" src=""></audio>
+        </div>
+
+        <div class="bottom-icon">
+            <input class="range" type="range" value="0">
+            <div>
+                <a onclick="list()"><ion-icon name="list"></ion-icon></a>
+                <a id="next" onclick="next()"><ion-icon name="play-forward"></ion-icon></a>
+                <a id="play" onclick="Play()"><ion-icon name="play"></ion-icon></a>
+                <a id="back" onclick="back()"><ion-icon name="play-back"></ion-icon></a>
+                <a onclick="UpDown()"><ion-icon name="arrow-up"></ion-icon></a>
+            </div>
+        </div>
+
+        <div class="list"></div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
